@@ -1,0 +1,464 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body {
+    font-family: Helvetica, sans-serif;
+    background-color: #6D8B74;
+    color: #EFEAD8;
+}
+
+.containerPadre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px max-content 1fr 1fr 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "nav nav"
+        "taller taller"
+        "historia historia"
+        "ubicacion ubicacion"
+        "footer footer";
+    justify-items: center;
+    align-items: center;
+}
+
+/* nav */
+
+.nav {
+    grid-area: nav;
+    background-color: #D0C9C0;
+    display: flex;
+    height: 40px;
+    width: 100vw;
+    margin: 0px;
+    font-weight: bold;
+    justify-content: space-between;
+    overflow-y: scroll;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    color: #82A284;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #5F7161;
+}
+
+.img-logo {
+    height: 100%;
+    padding-left: 10px;
+}
+
+.navegacion {
+    max-width: 100%;
+    /* margin-left: 70%; */
+    margin-right: 10px;
+}
+
+.navegacion li {
+    padding: 10px;
+    margin: 0px;
+    text-align: right;
+    display: inline-block;
+}
+
+.taller {
+    grid-area: taller;
+    display: flex;
+    background-image: url(../imagen/lambo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 95vh;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.taller h1 {
+    text-align: center;
+    color: white;
+    padding-bottom: 35px;
+}
+
+.historia {
+    grid-area: historia;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #A2B38B;
+    margin: 30px 30px;
+    border-radius: 10px 10px;
+    color: #1A3C40;
+}
+
+.ubicacion {
+    grid-area: ubicacion;
+    max-width: 50%;
+    padding: 10px;
+    background-color: #A2B38B;
+    margin: 5% 25% 5%;
+    position: relative;
+    border-radius: 15px;
+    color: #1A3C40;
+    text-align: center;
+}
+
+.ubicacion h2 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.ubicacion p {
+    padding: 10px;
+}
+
+/* nosotros */
+
+.containerNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr 1fr 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "nav nav"
+        "box1 box2"
+        "box3 box4"
+        "footer footer";
+}
+
+.box1 {
+    grid-area: box1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    grid-area: box2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box3 {
+    grid-area: box3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box4 {
+    grid-area: box4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emp {
+    max-width: 80vh;
+    padding: 10px;
+    background-color: #A2B38B;
+    margin: 30px 30px;
+    overflow: hidden;
+    border-radius: 0px 30px 30px;
+    color: #1A3C40;
+}
+
+.emp p {
+    max-width: 50%;
+    display: inline-block;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.emp img {
+    height: 200px;
+    width: 200px;
+}
+
+/* Cliente */
+
+.containerCliente {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 1fr 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "nav"
+        "boxCliente1"
+        "boxCliente2"
+        "footer";
+}
+
+.boxCliente1 {
+    grid-area: boxCliente1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+
+.boxCliente2 {
+    grid-area: boxCliente2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.cliente {
+    max-width: 100%;
+    padding: 30px;
+    background-color: #A2B38B;
+    margin: 30px 30px;
+    overflow: hidden;
+    border-radius: 30px 30px;
+    color: #1A3C40;
+}
+
+.cliente span {
+    max-width: 50%;
+    margin: 20px;
+}
+
+.cliente-foto {
+    height: 20vh;
+}
+
+.img-centro {
+    width: 100%;
+    height: auto;
+}
+
+.rep {
+    height: 20vh;
+}
+
+/* taller */
+
+.containerTaller {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 50px 1fr 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "nav"
+        "nuestroTaller"
+        "tallerImg"
+        "footer";
+    justify-items: center;
+    align-items: center;
+}
+
+.containerImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "taller1 taller2"
+        "taller3 taller4";
+    align-items: center;
+}
+
+.nuestroTaller {
+    grid-area: nuestroTaller;
+    margin: 30px 0;
+}
+
+.taller1 {
+    grid-area: taller1;
+    padding: 20px;
+    width: 600px;
+}
+
+.taller2 {
+    grid-area: taller2;
+    padding: 20px;
+    width: 600px;
+}
+
+.taller3 {
+    grid-area: taller3;
+    padding: 20px;
+    width: 600px;
+}
+
+.taller4 {
+    grid-area: taller4;
+    padding: 20px;
+    width: 600px;
+}
+
+.tallerImg {
+    max-width: 100%;
+}
+
+/* Contacto */
+
+.containerContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 6fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "nav"
+        "formulario"
+        "footer";
+    align-items: center;
+    justify-items: center;
+}
+
+.formulario {
+    grid-area: formulario;
+    max-width: 100%;
+    padding: 30px;
+    background-color: #6D8B74;
+    overflow: hidden;
+    border: solid 3px #A2B38B;
+    color: #D0C9C0;
+}
+
+.contFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.contFlex input {
+    text-align: center;
+    margin: 5px;
+}
+
+/* footer */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-color: #c6c6c6;
+    color: #5F7161;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-foot {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-foot td {
+    padding: 4px 10px;
+}
+
+.table-foot a {
+    opacity: 0.5;
+    color: #5F7161
+}
+
+.table-foot a:hover {
+    opacity: 1;
+}
+
+.footer i {
+    font-size: 3rem;
+}
+
+@media (max-width: 450px) {
+    .containerPadre {
+        grid-template-rows: 40px max-content 1fr 0.5fr 100px;
+    }
+
+    .taller {
+        background-image: url(../imagen/wpcelu.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: flex-end;
+    }
+
+    .taller h1 {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .ubicacion {
+        margin: 0px;
+    }
+
+    .containerNosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 1fr 1fr 1fr 1fr 100px;
+        grid-template-areas:
+            "nav"
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "footer"
+    }
+
+    .emp img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .cliente-foto {
+        height: 150px;
+    }
+
+    .rep {
+        display: none;
+    }
+
+    .boxCliente1,
+    .boxCliente2 {
+        gap: 10px;
+        align-items: flex-start;
+        overflow-y: scroll;
+    }
+
+    .containerTaller {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 0.1fr 1fr 100px;
+        gap: 0px 0px;
+        grid-template-areas:
+            "nav"
+            "nuestroTaller"
+            "taller1 taller2"
+            "taller3 taller4"
+            "footer";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .containerImg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tallerImg {
+        width: 100vw
+    }
+
+    .taller1,
+    .taller2,
+    .taller3,
+    .taller4 {
+        width: 95%;
+        margin: 0;
+    }
+
+    .footer i {
+        font-size: 2rem;
+    }
+}
