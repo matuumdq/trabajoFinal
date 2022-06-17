@@ -6,32 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9d0271933d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./imagen/favicon.png">
     <title>Proyecto-Salinas Mateo</title>
 </head>
 
 <body class="body">
-    <div class="containerContacto">
-        <header class="nav">
-            <a href="./index.html"><img class="img-logo" src="./imagen/logotaller.png " alt=""></a>
-            <nav class="navegacion">
-                <ul>
-                    <li> <a href="./index.html"> Inicio </a></li>
-                    <li> <a href="./nosotros.html"> Nosotros </a></li>
-                    <li> <a href="./clientes.html"> Nuestros clientes </a></li>
-                    <li> <a href="./taller.html"> Galeria </a></li>
-                    <li> <a href="./contacto.html"> Contacto </a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./imagen/logotaller.png" alt="" width="125" height="50">
+                </a>
+                <a class="navbar-brand" href="/index.html">Taller Salinas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./taller.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <div class="accordion accordion-flush nosotros" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Turnos
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Siempre tenemos turnos disponibles, podes reservar llamando al .... o
+                    indicando tu numero de telefono en el formulario siguiente, y nosotros te contactamos</div>
+                <img src="./images/cara1.png" alt="">
+            </div>
+        </div>
+        <div class="accordion-item acordeon">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Cuanto demoramos?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">El diagnostico se hace en el momento, lo demas dependera del trabajo a
+                    realizar, indicamos fecha estimada al ver el trabajo.</div>
+                <img src="./images/cara3.png" alt="">
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Metodo de pago
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Aceptamos efectivo, tarjetas y criptomonedas</div>
+                <img src="./images/cara1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="containerContacto">
         <section class="formulario">
             <h2>Contactanos!</h2>
             <form action="#" method="GET">
                 <div class="contFlex">
                     <input type="text" placeholder="Nombre y Apellido">
                     <input type="email" placeholder="Tu Email">
+                    <input type="tel" placeholder="Tu numero de celular">
                     <p>Deja tu comentario</p>
                     <textarea name="" id="" cols="70" rows="8"></textarea><br>
                     <label>
@@ -53,23 +118,24 @@
                         <span>Mujer</span>
                         <input type="radio" name="sexo" value="mujer">
                     </label><br>
-                    <input type="submit" name="" id="">
+                    <input type="submit" name="" id="" class="envio">
                 </div>
             </form>
         </section>
 
         <footer class="footer">
-            <table class="table-foot">
-                <tr>
-                    <td><a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></td>
-                    <td><a href="www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a></td>
-                    <td><a href="www.instagram.com" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-                    </td>
-                </tr>
-            </table>
-            <p>COPYRIGHT 2022 - SALINAS MATEO</p>
+            <div class="iconFooter">
+                <i class="social-icon fab fa-facebook-f"></i>
+                <i class="social-icon fab fa-twitter"></i>
+                <i class="social-icon fab fa-instagram"></i>
+                <p>COPYRIGHT 2022 - SALINAS MATEO</p>
+            </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -5,67 +5,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9d0271933d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./imagen/favicon.png">
     <title>Proyecto-Salinas Mateo</title>
 </head>
 
 <body class="body">
-    <div class="containerCliente">
-        <header class="nav">
-            <a href="./index.html"><img class="img-logo" src="./imagen/logotaller.png " alt="" /></a>
-            <nav class="navegacion">
-                <ul>
-                    <li><a href="./index.html"> Inicio </a></li>
-                    <li><a href="./nosotros.html"> Nosotros </a></li>
-                    <li><a href="./clientes.html"> Nuestros clientes </a></li>
-                    <li><a href="./taller.html"> Galeria </a></li>
-                    <li><a href="./contacto.html"> Contacto </a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="cliente boxCliente1">
-            <img class="rep" src="./imagen/reparado.jpeg" alt="reparacion" />
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quis
-                omnis facilis, consectetur non illo fugit temporibus optio eius error
-                quidem, nobis reprehenderit! Iste optio delectus voluptate ratione
-                adipisci eum consectetur repellat veritatis sunt, officiis praesentium
-                doloribus, vel provident? Odit eum enim maiores? Atque molestiae unde
-                facilis, sit incidunt quia rem modi assumenda cumque nobis eligendi
-                cupiditate minus, minima saepe!
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./imagen/logotaller.png" alt="" width="125" height="50">
+                </a>
+                <a class="navbar-brand" href="/index.html">Taller Salinas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./taller.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <img class="cliente-foto" src="./imagen/caracliente.png" alt="cliente" />
-        </section>
+        </nav>
+    </header>
 
-        <section class="cliente boxCliente2">
-            <img class="cliente-foto" src="./imagen/caracliente2.png" alt="cliente" />
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sit
-                magnam exercitationem molestias commodi earum? Eveniet reprehenderit
-                deleniti consequatur. Provident, eum autem? Enim assumenda architecto
-                delectus alias expedita necessitatibus commodi libero repudiandae
-                placeat nisi iusto repellendus, cumque, doloribus, eveniet ipsa
-                impedit rerum nemo dolores aliquam error ab eum sint quod? Quis alias
-                voluptate unde iure? Ad sapiente et blanditiis consequuntur!
+    <div class="carouselCliente">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item containerCliente active " data-bs-interval="5000">
+                    <h2>" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates iste voluptatem quidem
+                        quasi,
+                        quam, suscipit ratione libero tempore laudantium eveniet molestias quae natus cupiditate minima
+                        explicabo architecto! Magnam, corrupti eligendi esse officiis nobis harum facilis explicabo fuga
+                        quae et ipsa."</h2>
+                    <img class="cliente-foto" src="./imagen/caracliente.png" alt="">
+                    <em>Abril</em>
+                </div>
+                <div class="carousel-item containerCliente " data-bs-interval="5000">
+                    <h2>" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates iste voluptatem quidem
+                        quasi,
+                        quam, suscipit ratione libero tempore laudantium eveniet molestias quae natus cupiditate minima
+                        explicabo architecto! Magnam, corrupti eligendi esse officiis nobis harum facilis explicabo fuga
+                        quae et ipsa."</h2>
+                    <img class="cliente-foto" src="./imagen/caracliente2.png" alt="">
+                    <em>Marcelo</em>
+                </div>
             </div>
-            <img class="rep" src="./imagen/reparado2.jpg" alt="reparacion" />
-        </section>
-
-        <footer class="footer">
-            <table class="table-foot">
-                <tr>
-                    <td><a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></td>
-                    <td><a href="www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a></td>
-                    <td><a href="www.instagram.com" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-                    </td>
-                </tr>
-            </table>
-            <p>COPYRIGHT 2022 - SALINAS MATEO</p>
-        </footer>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- <span class="visually-hidden">Previous</span> -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <!-- <span class="visually-hidden">Next</span> -->
+            </button>
+        </div>
     </div>
+
+    <footer class="footer">
+        <div class="iconFooter">
+            <i class="social-icon fab fa-facebook-f"></i>
+            <i class="social-icon fab fa-twitter"></i>
+            <i class="social-icon fab fa-instagram"></i>
+            <p>COPYRIGHT 2022 - SALINAS MATEO</p>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

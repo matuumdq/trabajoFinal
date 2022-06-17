@@ -12,94 +12,44 @@
 .containerPadre {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 40px max-content 1fr 1fr 100px;
-    gap: 0px 0px;
+    grid-template-rows: auto 0.7fr 20vh 100px;
+    gap: 10px 10px;
     grid-template-areas:
-        "nav nav"
-        "taller taller"
-        "historia historia"
-        "ubicacion ubicacion"
-        "footer footer";
+        "taller"
+        "historia"
+        "ubicacion"
+        "footer";
     justify-items: center;
     align-items: center;
-}
-
-/* nav */
-
-.nav {
-    grid-area: nav;
-    background-color: #D0C9C0;
-    display: flex;
-    height: 40px;
-    width: 100vw;
-    margin: 0px;
-    font-weight: bold;
-    justify-content: space-between;
-    overflow-y: scroll;
-    position: sticky;
-    top: 0;
-}
-
-.nav a {
-    color: #82A284;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    color: #5F7161;
-}
-
-.img-logo {
-    height: 100%;
-    padding-left: 10px;
-}
-
-.navegacion {
-    max-width: 100%;
-    /* margin-left: 70%; */
-    margin-right: 10px;
-}
-
-.navegacion li {
-    padding: 10px;
-    margin: 0px;
-    text-align: right;
-    display: inline-block;
 }
 
 .taller {
     grid-area: taller;
     display: flex;
-    background-image: url(../imagen/lambo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 95vh;
     justify-content: center;
     align-items: flex-end;
 }
 
-.taller h1 {
-    text-align: center;
-    color: white;
-    padding-bottom: 35px;
+.taller img {
+    max-width: 100%;
+    height: auto;
 }
 
 .historia {
     grid-area: historia;
     max-width: 100%;
     padding: 10px;
-    background-color: #A2B38B;
-    margin: 30px 30px;
+    background-color: #5F7161;
+    margin: 50px 5%;
     border-radius: 10px 10px;
-    color: #1A3C40;
+    color: white;
 }
 
 .ubicacion {
     grid-area: ubicacion;
     max-width: 50%;
     padding: 10px;
-    background-color: #A2B38B;
+    background-color: #5F7161;
     margin: 5% 25% 5%;
     position: relative;
     border-radius: 15px;
@@ -115,7 +65,22 @@
 }
 
 .ubicacion p {
+    color: white;
+    margin-bottom: 15px;
     padding: 10px;
+}
+
+.btn {
+    transform: scale(1);
+    background-color: #24331a;
+    border-color: #24331a;
+}
+
+.btn:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    background-color: #24331a;
+    border-color: #5F7161;
 }
 
 /* nosotros */
@@ -123,10 +88,9 @@
 .containerNosotros {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40px 1fr 1fr 100px;
+    grid-template-rows: 1fr 1fr 100px;
     gap: 0px 0px;
     grid-template-areas:
-        "nav nav"
         "box1 box2"
         "box3 box4"
         "footer footer";
@@ -161,11 +125,9 @@
 }
 
 .emp {
-    max-width: 80vh;
     padding: 10px;
-    background-color: #A2B38B;
-    margin: 30px 30px;
-    overflow: hidden;
+    background-color: #5F7161;
+    margin: 3%;
     border-radius: 0px 30px 30px;
     color: #1A3C40;
 }
@@ -173,8 +135,9 @@
 .emp p {
     max-width: 50%;
     display: inline-block;
-    margin-left: 10%;
+    margin: 5% 10%;
     text-align: justify;
+    color: white;
 }
 
 .emp img {
@@ -184,132 +147,51 @@
 
 /* Cliente */
 
+.carouselCliente {
+    margin: 50px;
+    background-color: #5F7161;
+    border-radius: 10px;
+}
+
 .containerCliente {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 1fr 1fr 100px;
-    gap: 0px 0px;
-    grid-template-areas:
-        "nav"
-        "boxCliente1"
-        "boxCliente2"
-        "footer";
-}
-
-.boxCliente1 {
-    grid-area: boxCliente1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 200px;
-    overflow: hidden;
-}
-
-.boxCliente2 {
-    grid-area: boxCliente2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 200px;
-}
-
-.cliente {
-    max-width: 100%;
-    padding: 30px;
-    background-color: #A2B38B;
-    margin: 30px 30px;
-    overflow: hidden;
-    border-radius: 30px 30px;
-    color: #1A3C40;
-}
-
-.cliente span {
-    max-width: 50%;
-    margin: 20px;
+    text-align: center;
+    padding: 3% 15%;
 }
 
 .cliente-foto {
-    height: 20vh;
+    margin: 25px;
+    height: 150px;
 }
 
-.img-centro {
-    width: 100%;
-    height: auto;
-}
-
-.rep {
-    height: 20vh;
-}
 
 /* taller */
-
-.containerTaller {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 50px 1fr 100px;
-    gap: 0px 0px;
-    grid-template-areas:
-        "nav"
-        "nuestroTaller"
-        "tallerImg"
-        "footer";
-    justify-items: center;
-    align-items: center;
-}
-
-.containerImg {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "taller1 taller2"
-        "taller3 taller4";
-    align-items: center;
-}
-
 .nuestroTaller {
-    grid-area: nuestroTaller;
-    margin: 30px 0;
-}
-
-.taller1 {
-    grid-area: taller1;
-    padding: 20px;
-    width: 600px;
-}
-
-.taller2 {
-    grid-area: taller2;
-    padding: 20px;
-    width: 600px;
-}
-
-.taller3 {
-    grid-area: taller3;
-    padding: 20px;
-    width: 600px;
-}
-
-.taller4 {
-    grid-area: taller4;
-    padding: 20px;
-    width: 600px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
 }
 
 .tallerImg {
-    max-width: 100%;
+    margin: 15px auto 50px;
+}
+
+.carTexto {
+    font-weight: bold;
+    color: #24331a;
+    margin-bottom: 50px;
 }
 
 /* Contacto */
+.accordion {
+    margin: 10px;
+}
 
 .containerContacto {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 40px 6fr 1fr;
-    gap: 0px 0px;
+    grid-template-rows: 6fr 1fr;
     grid-template-areas:
-        "nav"
         "formulario"
         "footer";
     align-items: center;
@@ -324,6 +206,7 @@
     overflow: hidden;
     border: solid 3px #A2B38B;
     color: #D0C9C0;
+    margin: 5%;
 }
 
 .contFlex {
@@ -334,6 +217,14 @@
 .contFlex input {
     text-align: center;
     margin: 5px;
+}
+
+.envio:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: #5F7161;
+    color: white;
 }
 
 /* footer */
@@ -350,54 +241,29 @@
     justify-content: center;
 }
 
-.table-foot {
-    margin-left: auto;
-    margin-right: auto;
+.iconFooter {
+    text-align: center;
 }
 
-.table-foot td {
-    padding: 4px 10px;
-}
-
-.table-foot a {
+.iconFooter i {
+    display: flexbox;
+    font-size: 2.5rem;
+    padding: 5%;
     opacity: 0.5;
-    color: #5F7161
 }
 
-.table-foot a:hover {
+.iconFooter i:hover {
     opacity: 1;
+    transform: rotate(360deg);
+    transition: 1s;
 }
 
-.footer i {
-    font-size: 3rem;
-}
-
-@media (max-width: 450px) {
-    .containerPadre {
-        grid-template-rows: 40px max-content 1fr 0.5fr 100px;
-    }
-
-    .taller {
-        background-image: url(../imagen/wpcelu.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        align-items: flex-end;
-    }
-
-    .taller h1 {
-        font-size: 2rem;
-        color: white;
-    }
-
-    .ubicacion {
-        margin: 0px;
-    }
-
+@media (max-width: 1024px) {
     .containerNosotros {
+        max-width: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 40px 1fr 1fr 1fr 1fr 100px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 100px;
         grid-template-areas:
-            "nav"
             "box1"
             "box2"
             "box3"
@@ -410,55 +276,8 @@
         width: 100px;
     }
 
-    .cliente-foto {
-        height: 150px;
-    }
-
-    .rep {
-        display: none;
-    }
-
-    .boxCliente1,
-    .boxCliente2 {
-        gap: 10px;
-        align-items: flex-start;
-        overflow-y: scroll;
-    }
-
-    .containerTaller {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 40px 0.1fr 1fr 100px;
-        gap: 0px 0px;
-        grid-template-areas:
-            "nav"
-            "nuestroTaller"
-            "taller1 taller2"
-            "taller3 taller4"
-            "footer";
-        justify-items: center;
-        align-items: center;
-    }
-
-    .containerImg {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tallerImg {
-        width: 100vw
-    }
-
-    .taller1,
-    .taller2,
-    .taller3,
-    .taller4 {
-        width: 95%;
-        margin: 0;
-    }
-
-    .footer i {
-        font-size: 2rem;
+    .carTexto {
+        font-weight: 500;
+        color: #f8f8f8;
     }
 }
